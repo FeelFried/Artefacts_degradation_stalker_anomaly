@@ -159,6 +159,7 @@ function item_artefact.artefact_binder:net_spawn(se_abstract)
 end
 
 function arti_updatus(art,arti_state)
+	if arti_timer == 0 then item_belt() end
 	printf("art_updated_event")
 	printf(arti_state)
 	art:set_condition(arti_state)
